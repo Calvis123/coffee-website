@@ -60,6 +60,9 @@
     --transition-medium: 300ms ease-in-out;
     --transition-slow: 500ms ease-in-out;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* styling for whole site */
 ul {
@@ -209,6 +212,7 @@ header .navbar {
     max-width: 500px;
     margin-right: 30px;
 }
+
 /* about section styling */
 .about-section {
     padding: 120px;
@@ -227,12 +231,13 @@ header .navbar {
     height: 400px;
     object-fit: cover;
     border-radius: 50%;
-    
+
 }
 
 .about-section .about-details .section-title {
     padding: 0;
 }
+
 .about-section .about-details {
     max-width: 50%;
 }
@@ -259,18 +264,20 @@ header .navbar {
 .about-section .social-link-list .social-link:hover {
     color: orange;
 }
+
 /*  menu section */
 .menu-section {
     color: white;
     background: black;
     padding: 50px 0 100px;
 }
+
 .menu-section .menu-list {
-display: flex;
-flex-wrap: wrap;
-gap: 110px;
-align-items: center;
-justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -296,6 +303,7 @@ justify-content: space-between;
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
 }
+
 .menu-section .menu-list .menu-item .text {
     font-size: var(--font-size-md);
 }
@@ -308,6 +316,7 @@ justify-content: space-between;
 }
 
 .testimonials-section .testimonial {
+    user-select: none;
     display: flex;
     padding: 35px;
     text-align: center;
@@ -331,6 +340,7 @@ justify-content: space-between;
 .testimonials-section .testimonial .feedback {
     line-height: 25px;
 }
+
 /* galleery section styling */
 .gallery-section {
     padding: 50px 0 100px;
@@ -394,4 +404,73 @@ justify-content: space-between;
     background: white;
     border-radius: var(--border-radius-sm);
     border: 1px solid var(gray);
+}
+
+.contact-section .contact-form {
+    width: 50%;
+}
+
+.contact-section .contact-form .form-input:focus {
+    border-color: orange;
+}
+
+.contact-section .contact-form textarea .form-input {
+    height: 100px;
+    padding: 12px;
+    resize: vertical;
+}
+
+.contact-section .contact-form .submit-button {
+    padding: 10px 26px;
+    margin-top: 10px;
+    color: white;
+    font-size: medium;
+    font-weight: var(--font-weight-bold);
+    background: #3b141c;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(#3b141c);
+    transition: 0.3s ease;
+}
+
+.contact-section .contact-form .submit-button:hover {
+    color: #3b141c;
+    background: transparent;
+}
+
+/* footer section styling */
+
+.footer-section {
+    padding: 20px 0;
+    background: black;
+}
+
+.footer-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-section :where(.copyright-text, .social-link, .policy-link) {
+    color: white;
+    transition: 0.2s ease;
+}
+
+.footer-section .social-link-list {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-section .social-link-list .social-link {
+    font-size: large;
+}
+
+.footer-section .social-link-list .social-link:hover,
+.footer-section .policy-text .policy-link:hover {
+    color: orange;
+}
+
+.footer-section .policy-text .separator {
+    margin: 0 5px;
+    color: white;
 }
