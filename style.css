@@ -188,6 +188,7 @@ header .navbar {
 
 .hero-section .hero-details .button {
     padding: 10px;
+    margin-bottom: 23px;
     border: 2px solid transparent;
     color: #3b141c;
     border-radius: var(--border-radius-pill);
@@ -271,6 +272,8 @@ header .navbar {
     color: white;
     background: black;
     padding: 50px 0 100px;
+    
+    
 }
 
 .menu-section .menu-list {
@@ -435,7 +438,7 @@ header .navbar {
 
 .contact-section .contact-form .submit-button:hover {
     color: #3b141c;
-    background: transparent;
+    background: orange;
 }
 
 /* footer section styling */
